@@ -9,6 +9,7 @@ public class Viajero {
     }
 
     public void comienzaViaje(){
+        System.out.println("El viajero está ");
         vehiculo.viajar();
     }
 
