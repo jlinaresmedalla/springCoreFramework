@@ -7,8 +7,10 @@ import org.springframework.context.annotation.Configuration;
 public class Cliente {
     public static void main(String[] args) {
 
+        //Crea el IoC Container, basa su configuracion en la clase AppConfig
         ApplicationContext appcontext = new AnnotationConfigApplicationContext(AppConfig.class);
 
+        //Maneja el ciclo de vida de los beans mediante anotaciones
         Viajero viajero = appcontext.getBean(Viajero.class);
         viajero.comienzaViaje();
 
